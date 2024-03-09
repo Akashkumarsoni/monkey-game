@@ -1,0 +1,389 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  background-image: url("./assets//images/background-base.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  word-wrap: break-word;
+}
+.h-100p {
+  height: 100%;
+}
+.h-100v {
+  height: 100vh;
+}
+.container {
+  position: relative;
+}
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.d-flex-around {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.character {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50% , -100%);
+}
+.character-msg {
+  position: fixed;
+  top: -30%;
+  left: 30%;
+}
+.character-msg-content {
+  position: fixed;
+  height: 102px;
+  left: 47%;
+  top: -28%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  align-items: center;
+  color: #11aec6;
+  width: 451px;
+  text-align: start;
+}
+.score-level {
+  position: fixed;
+  top: 5%;
+  left: 30%;
+}
+
+.score-level-abs {
+  position: absolute;
+  top: -100%;
+  right: 0%;
+  transform: rotate(-21.36deg);
+}
+
+.button {
+  cursor: pointer;
+  z-index: 1000;
+}
+.back {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.down {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.dotted-path{
+  position: fixed;
+  top: 33%;
+  width: 62%;
+}
+.method-card-box{
+  z-index: 200;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.method-card {
+position: relative;
+width: 300px;
+height: 390px;
+background: #FFFFFF;
+border-radius: 69px;
+}
+.method-card-head{
+  width: 243px;
+  height: 110px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #11AEC6;
+  position: absolute;
+  bottom: 2%;
+  left: 15%;
+}
+.method-card-subtxt {
+  width: 243px;
+  height: 33px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #A6C930;
+  position: absolute;
+  bottom: -1%;
+  left: 27%;
+}
+.method-card-subtxt-3 {
+  width: 243px;
+  height: 33px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #A6C930;
+  position: absolute;
+  bottom: -1%;
+  left:9%;
+}
+.method-card-count{
+  position: fixed;
+  bottom: 40%;
+}
+.method-card-img{
+  position: absolute;
+  top: 9%;
+  left: 18%;
+}
+.method-card-img-3{
+  position: absolute;
+  top: 9%;
+  left: -6%;
+}
+.sugg-care {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  background-color: aqua;
+}
+.sugg-txt-top{
+  position: fixed;
+  top: 15%;
+  right: 29%;
+
+}
+.sugg-txt-rotate {
+  transform: rotateX(180deg);
+}
+.sugg-msg-top{
+  position: fixed;
+  top: 13%;
+  right: 36%;
+}
+.sugg-msg-content-top{
+  position: fixed;
+    top: 14%;
+    right: 39%;
+    color: #11aec6;
+}
+.sugg-txt-bottom{
+  position: fixed;
+  bottom: 2%;
+  left: 29%;
+  transform: rotate(180deg);
+  transform-origin: left top;
+}
+
+.sugg-msg-bottom{
+  position: fixed;
+    bottom: -7%;
+    right: 85%;
+  
+}
+.sugg-msg-content-bottom{
+  position: fixed;
+  bottom: -59%;
+  left: -18%;
+  color: #11aec6;
+  transform: rotate(-180deg);
+  transform-origin: left top;
+}
+.game-care {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  background-color: rgb(27, 89, 89);
+}
+
+/* Game page CSS */
+.boxsdiv {
+  cursor: pointer;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boxofimg {
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+.boxofimg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.mainpic {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 150px;
+  border-radius: 10px;
+  height: 150px;
+  border: 1px solid black;
+  perspective: 1000px;
+}
+.flip-box2 {
+  pointer-events: none;
+  background-color: transparent;
+  width: 150px;
+  border-radius: 10px;
+  height: 150px;
+  border: 1px solid black;
+  perspective: 1000px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: lightgreen;
+}
+
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  padding: 5px;
+  box-shadow:0 0 18px  rgba(235, 235, 235, 1);
+}
+
+.card-svg-container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.card--pink .card-svg-container {
+  background:linear-gradient(rgba(251, 168, 193, 1) ,
+  rgba(251, 168, 193, 0.54) ,
+  rgba(251, 168, 193, 0.97));
+}
+
+.card--blue .card-svg-container {
+  background:linear-gradient(rgba(162, 227, 243, 1),
+  rgba(162, 227, 243, 0.29),
+  rgba(162, 227, 243, 1));
+}
+
+.cards-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  display: flex;
+  gap: 40px;
+}
+
+.cards-container--item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  height: fit-content;
+}
+
+.winner-page{
+  position: fixed;
+}
+.winner-page--card {
+  position: fixed;
+  left: 33%;
+  top: -11%;
+}
+.winner-page--yah-btn{
+  position: fixed;
+  bottom: 6%;
+  width: 28%;
+  height: 15%;
+  background-color: transparent;
+  left: 37%;
+  border-radius: 54px;
+  cursor: pointer;
+}
+.winner-page--data{
+  z-index: 100;
+}
+.winner-page--score{
+  height: 60px;
+    width: 60px;
+    position: fixed;
+    background-color: transparent;
+    top: 20%;
+    left: 38%;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Nunito';
+}
+.winner-page--monkey{
+  position: fixed;
+  top: 38%;
+  left: 42%;
+}
